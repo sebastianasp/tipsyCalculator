@@ -19,6 +19,12 @@ class TipModel {
         self._billAmount = billAmount
         self._tipPercent = tipPercent
     }
+
+    func calculateTip() {
+        
+        _tipAmount = billAmount * tipPercent
+        _totalAmount = billAmount + tipAmount
+    }
     
     var billAmount: Double {
         get {
